@@ -1,7 +1,4 @@
-/**
- *
- * @author Manal Alhihi
- */
+
 
 import java.io.File;
 import java.time.LocalDate;
@@ -11,9 +8,7 @@ import java.util.Scanner;
 
 public class Main {
     
-    //=============================================================================
-    // global variables
-    //=============================================================================
+   
     public static Scanner input = new Scanner (System.in);
 
     public static productsManager pdata  = new productsManager("prodcuts.csv");
@@ -28,9 +23,7 @@ public class Main {
     public static reviewsManager rdata= new reviewsManager("reviews.csv", pdata.getproductsIDs());
     public static LinkedList <Review>  reviews = rdata.getreviewsData();
  
-    //=============================================================================
-    // Products Menu
-    //=============================================================================
+    
     public static void productsMenu()
     {
         int choice;
@@ -207,9 +200,7 @@ public class Main {
         CIDs.printKeys_Data();
     }
     
-    //=============================================================================
-    // Customers Menu
-    //=============================================================================
+   
     public static void CustomersMenu()
     {
         int choice;
@@ -311,9 +302,7 @@ public class Main {
         return selectedReviews;
     }
     
-    //=================================================================
-    // Orders Menu
-    //=================================================================
+   
     public static void OrdersMenu()
     {
         int choice;
@@ -385,9 +374,7 @@ public class Main {
         }
     }
     
-    //=================================================================
-    // Place new order
-    //=================================================================
+ 
     public static void PlaceOrder()
     {
         Order new_order = new Order ();
@@ -459,9 +446,7 @@ public class Main {
         System.out.println(new_order);
     }
     
-    //=================================================================
-    // Reviews Menu
-    //=================================================================
+   
     public static void ReviewsMenu()
     {
         System.out.println("\n==============================");
@@ -520,9 +505,7 @@ public class Main {
         }
     }
     
-    //=================================================================
-    // Add new review
-    //=================================================================
+   
     public static void AddNewReview()
     {
         System.out.print("Enter customer ID: ");
