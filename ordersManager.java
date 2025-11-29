@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 
-public class OrderData {
+public class ordersManager {
     
     public static Scanner input = new Scanner (System.in);
     
