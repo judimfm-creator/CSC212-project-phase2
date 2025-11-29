@@ -1,7 +1,7 @@
 import java.io.File;
 import java.util.Scanner;
 
-public class customerManager {
+public class customersManager {
     
     public static Scanner input = new Scanner (System.in);
     public static AVLTree<Integer, Customer> customersIDs = new AVLTree<Integer, Customer> ();
@@ -113,3 +113,4 @@ public void OrderHistory()
         customersNames.printKeys();
     }
 }
+
