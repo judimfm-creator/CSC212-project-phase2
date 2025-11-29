@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class reviewsData {
+public class reviewsManager {
     public static Scanner input = new Scanner (System.in);
     public static LinkedList<Review> reviews = new LinkedList<Review> ();
 
